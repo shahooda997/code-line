@@ -37,7 +37,7 @@ def main():
 
         elif choice == "3":
             # Display a simple help message
-            print("\nSelect 1 to print a pattern, 2 to rotate numbers, 3 for help, or 4 to exit.")
+            print("\n Select 1 to print a pattern, 2 to rotate numbers, 3 for help, or 4 to exit.")
 
         elif choice == "4":
             # Exit the program
