@@ -26,22 +26,29 @@ def main():
 
         elif choice == "2":
             # Get array details from user and rotate it
-            n = int(input("Enter the number of elements n: "))
-            k = int(input("Enter the number of steps k: "))
+
+            n = int(input("Enter the number of elements (n): "))
+            k = int(input("Enter the number of steps (k): "))
             
-            array = input("Enter {} numbers separated by spaces: ".format(n)).split()
+            array = input("Enter the array elements separated by spaces: ").split()
             k = k % n  # Adjust k to ensure it's within the array length
             
             rotated_array = array[-k:] + array[:-k]
-            print("Rotated Array:", rotated_array)
+            results= [int(row) for row in rotated_array]
+
+            print("Output: ", results)
 
         elif choice == "3":
             # Display a simple help message
-            print("\n Select 1 to print a pattern, 2 to rotate numbers, 3 for help, or 4 to exit.")
+            print("\n--- Help --- \n")
+            print("Option 1: Print a pattern with 'n' rows of decreasing asterisks.")
+            print("Option 2: Rotate an array of 'n' elements to the right by 'k' steps.")
+            print("Option 3: Display this help message.")
+            print("Option 4: Exit the program.")
 
         elif choice == "4":
             # Exit the program
-            print("Goodbye!")
+            print("Exiting the program. Goodbye!")
             break
 
         else:
